@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v4
       - name: Install and Run Linter
         run: |
-          # This command finds all JavaScript files recursively and runs JSHint on them
+          # This command finds all JavaScript files recursively and runs ESLint on them
           npm init -y
           npm install eslint eslint-config-standard eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^16.0.0  eslint-plugin-promise@^6.0.0
           find ./secondChance-backend -name app.js -exec ./node_modules/.bin/eslint -c .eslintrc.js {} +
